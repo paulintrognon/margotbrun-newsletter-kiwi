@@ -58,13 +58,13 @@ jQuery and Google Analytics were intentionally dropped.
 ## Build & run
 
 ```sh
-docker build -t ghcr.io/paulintrognon/newsletter-margotbrun:latest .
-docker run --rm -p 8080:80 ghcr.io/paulintrognon/newsletter-margotbrun:latest
+docker build -t ghcr.io/paulintrognon/margotbrun-newsletter-kiwi:latest .
+docker run --rm -p 8080:80 ghcr.io/paulintrognon/margotbrun-newsletter-kiwi:latest
 # open http://localhost:8080/
 ```
 
 ## Hosting
 
-The image is pushed to `ghcr.io/paulintrognon/newsletter-margotbrun`. Hosting on the
+The image is pushed to `ghcr.io/paulintrognon/margotbrun-newsletter-kiwi`. Hosting on the
 k3s cluster (k8s manifests + Argo CD Application) is handled in the separate
 `paulin/infra` repository.
