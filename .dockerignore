@@ -1,0 +1,5 @@
+# Keep the build context tiny — only site/ + Dockerfile + nginx.conf are needed.
+newsletter-kiwi/
+oiseaux-local.html
+.git/
+*.md

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/vendor/fonts.css">
+<link rel="stylesheet" href="/static/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/main.css">
+<style>
+/* The video popup is hidden until a bird is clicked (see script at end).
+   Only then is the YouTube iframe loaded — nothing loads on page open. */
+#birdPopup { display: none; }
+#birdPopup.is-open { display: flex; }
+</style>
+<title>Kei Te Waiata Ngā Manu - Newsletter des kiwis</title>
+</head>
+<body>
+<div class="Layout">
+<header class="Layout_header">
+<nav class="Layout_nav">
+<a href="/"><img src="/static/media/nav-home.png" alt="Accueil" title="Retour à l'accueil"></a>
+<a href="/liste" class="Layout_nav_enveloppe"><img src="/static/media/nav-enveloppe.png" alt="enveloppe" title="Lire les newsletters"><span class="Layout_nav_enveloppe_number">11</span></a>
+<a href="/oiseaux"><img src="/static/media/nav-birds.png" alt="Le chant des oiseaux" title="Oiseaux de Nouvelle-Zélande"></a>
+</nav>
+</header>
+<div class="Layout_content">
+
+<div class="Page BirdsPage">
+  <h1 class="Page_title">Kei Te Waiata Ngā Manu</h1>
+  <div class="Page_content">
+
+    <div id="birdPopup" class="BirdsPage_popup" onclick="closeVideo()">
+      <button class="BirdsPage_popup_close" type="button">Retour à la liste</button>
+      <iframe id="birdPopupIframe" class="BirdsPage_popup_iframe" title="Le chant des oiseaux" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <p class="BirdsPage_subtitle">Le Chant Des Oiseaux</p>
+    <h2 class="BirdsPage_catchphrase">Directement dans vos oreilles, le chant des oiseaux emblématiques de Nouvelle-Zélande</h2>
+    <div class="BirdsPage_cards">
+
+      <div class="card-deck">
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('61rDI71QFj4')" aria-label="Voir la vidéo : Tūī">
+            <img src="/static/media/tui.bcc57972.jpg" class="card-img-top" alt="Tūī">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Tūī</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/tui.9c7100f6.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('61rDI71QFj4')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('wfifZO49bSM')" aria-label="Voir la vidéo : Korimako (Bellbird)">
+            <img src="/static/media/bellbird.5a836015.jpg" class="card-img-top" alt="Korimako (Bellbird)">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Korimako (Bellbird)</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/bellbird.5e721578.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('wfifZO49bSM')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('HZZ5jNdegok')" aria-label="Voir la vidéo : Tīeke (Saddleback)">
+            <img src="/static/media/tieke.0ff8e301.jpg" class="card-img-top" alt="Tīeke (Saddleback)">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Tīeke (Saddleback)</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/tieke.6bfab7c0.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('HZZ5jNdegok')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('RRsPzcewVYE')" aria-label="Voir la vidéo : Kākā">
+            <img src="/static/media/kaka.8f5b6a49.jpg" class="card-img-top" alt="Kākā">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Kākā</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/kaka.dd42bb30.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('RRsPzcewVYE')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('Bz2J3nqHNAQ')" aria-label="Voir la vidéo : Kiwi">
+            <img src="/static/media/kiwi.677894c2.jpg" class="card-img-top" alt="Kiwi">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Kiwi</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/kiwi.7ba713a6.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('Bz2J3nqHNAQ')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('rjR0ckQ9mnU')" aria-label="Voir la vidéo : Takahē">
+            <img src="/static/media/takahe.818b39ff.jpg" class="card-img-top" alt="Takahē">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Takahē</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/takahe.28c4a84b.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('rjR0ckQ9mnU')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('An_TrhvFanY')" aria-label="Voir la vidéo : Pīwakawaka (Fantail)">
+            <img src="/static/media/fantail.58e85f8e.jpg" class="card-img-top" alt="Pīwakawaka (Fantail)">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Pīwakawaka (Fantail)</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/fantail.ba031756.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('An_TrhvFanY')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('SJgvKDot1WA')" aria-label="Voir la vidéo : Riroriro (Grey Warbler)">
+            <img src="/static/media/riroriro.19b63ea9.jpg" class="card-img-top" alt="Riroriro (Grey Warbler)">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Riroriro (Grey Warbler)</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/riroriro.7ca861d9.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('SJgvKDot1WA')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+        <div class="card">
+          <button type="button" class="BirdsPage_button" onclick="openVideo('u_d-MzSpDi0')" aria-label="Voir la vidéo : Hihi (Stitchbird)">
+            <img src="/static/media/hihi.8229062a.jpg" class="card-img-top" alt="Hihi (Stitchbird)">
+            <div class="BirdsPage_button_hover"><img src="/static/media/play.png" alt="Lire la vidéo"></div>
+          </button>
+          <div class="card-body">
+            <h5 class="card-title">Hihi (Stitchbird)</h5>
+            <audio controls class="BirdsPage_audio"><source src="/static/media/hihi.e68afde8.mp3" type="audio/mpeg"></audio>
+          </div>
+          <div class="card-footer BirdsPage_footer">
+            <a class="ShinyLink -multicolor" role="button" tabindex="0" onclick="openVideo('u_d-MzSpDi0')"><svg width="25px" height="25px" viewBox="0 0 512 512"><path d="M480,0H32C14.313,0,0,14.328,0,32v448c0,17.688,14.313,32,32,32h448c17.688,0,32-14.312,32-32V32C512,14.328,497.688,0,480,0z M320,32l32,64h-64l-32-64H320z M192,32l32,64h-64l-32-64H192z M32,32h32l32,64H32V32z M480,480H32V128h448V480z M480,96h-64l-32-64h64l32,32V96z M355.375,289.688c15.75,7.875,15.75,20.75,0,28.625l-166.75,83.375C172.875,409.562,160,401.594,160,384V224c0-17.594,12.875-25.563,28.625-17.688L355.375,289.688z"/></svg> Voir la version vidéo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="BirdsPage_interest">
+      <h2 class="BirdsPage_interest_title">(Re)découvrez nos newsletters&nbsp;!</h2>
+      <p class="BirdsPage_interest_phrase"><strong>100% Kiwi Made</strong>, <strong>0% Spam</strong>.<br> Vous y trouverez des nouvelles de notre périple, de la culture Néo-Zélandaise, un peu d'histoire et beaucoup de photos&nbsp;!</p>
+      <a class="BirdsPage_interest_InscriptionButton" href="/liste"><p class="BirdsPage_interest_InscriptionButton_text">Voir les newsletters</p></a>
+    </div>
+  </div>
+</div>
+
+</div>
+<footer class="Layout_footer">
+<a class="ShinyLink" href="/desinscription">Désinscription</a> - <a class="ShinyLink" href="/politique-confidentialite">Confidentialité</a> - <a class="ShinyLink" href="mailto:yesreply@margotbrun.com">Nous contacter</a>
+</footer>
+</div>
+
+<script>
+  // Click-to-open video popup (as in the original SPA). The iframe src is only
+  // set on open, so no video loads until a bird is clicked; cleared on close
+  // to stop playback.
+  function openVideo(id) {
+    var iframe = document.getElementById('birdPopupIframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + id +
+      '?rel=0&autoplay=1&loop=1&playlist&list=PLPl9HD9BbIJ-YJGPzIEW4bjk_eKO8Axu0';
+    document.getElementById('birdPopup').classList.add('is-open');
+  }
+  function closeVideo() {
+    document.getElementById('birdPopup').classList.remove('is-open');
+    document.getElementById('birdPopupIframe').src = '';
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeVideo();
+  });
+</script>
+</body>
+</html>

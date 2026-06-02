@@ -1,0 +1,6 @@
+# Upstream source clone (separately cloned from github.com/MargotBrun/newsletter-kiwi).
+# Not part of the deliverable; the built static site lives in site/.
+newsletter-kiwi/
+
+# Exploratory single-file snapshot, superseded by site/oiseaux.html
+oiseaux-local.html

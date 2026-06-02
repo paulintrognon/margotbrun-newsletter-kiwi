@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/static/vendor/fonts.css">
+<link rel="stylesheet" href="/static/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/main.css">
+<style>
+/* Frozen static rebuild: the quiz reveal is pure CSS (no JS).
+   Original markup is preserved (radio inside label); answers are
+   shown via :has() when the matching radio is checked. */
+.AusNzQuiz_question_answer { display: none; }
+.AusNzQuiz_question_choices:has(.quiz-aus:checked) .quiz-answer-aus { display: block; }
+.AusNzQuiz_question_choices:has(.quiz-nz:checked) .quiz-answer-nz { display: block; }
+</style>
+<title>Newsletter des kiwis</title>
+</head>
+<body>
+<div class="Layout">
+<header class="Layout_header">
+<nav class="Layout_nav">
+<a href="/"><img src="/static/media/nav-home.png" alt="Accueil" title="Retour à l'accueil"></a>
+<a href="/liste" class="Layout_nav_enveloppe"><img src="/static/media/nav-enveloppe.png" alt="enveloppe" title="Lire les newsletters"><span class="Layout_nav_enveloppe_number">11</span></a>
+<a href="/oiseaux"><img src="/static/media/nav-birds.png" alt="Le chant des oiseaux" title="Oiseaux de Nouvelle-Zélande"></a>
+</nav>
+</header>
+<div class="Layout_content">
+
+<div class="AusNzQuizPage">
+  <h1 class="AusNzQuizPage_title">Nouvelle-Zélande ou Australie, le&nbsp;Quiz&nbsp;!</h1>
+  <p class="AusNzQuizPage_subtitle">Essayez de deviner dans quel pays les photos suivantes ont été prises.<br>Attention, il y a des pièges ;)</p>
+  <div class="AusNzQuiz">
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">La plage</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/plage-fraserIsland.066cfbe6.jpg" alt="La plage">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q0" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q0" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-aus">Bonne réponse ! Voici une des nombreuses plages de Fraser Island, la plus grande île de sable au monde au large de la côte est.</p>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-nz">Perdu ! Voici une des nombreuses plages de Fraser Island, la plus grande île de sable au monde au large de la côte est.</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">L‘île</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/goatisland.5ba0315d.jpg" alt="L‘île">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q1" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q1" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-aus">Perdu, c'est Goat Island (l'île de la chêvre) en Nouvelle-Zélande.</p>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-nz">Bien joué ! Vous avez reconnu Goat Island (l'île de la chêvre) en Nouvelle-Zélande. Bêêêê !</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">La vue</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/south-sydney.21f120a1.jpg" alt="La vue">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q2" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q2" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-aus">Bravo, vous admirez les plaines au Sud de Sydney en Australie.</p>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-nz">Et non ! La Nouvelle-Zélande n'est pas si plate ! Vous admirez les plaines au Sud de Sydney en Australie.</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">La vue (bis)</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/dorrigo-rainforestnationalpark.e3ad7da4.jpg" alt="La vue (bis)">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q3" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q3" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-aus">Qui a dit qu'il ne pleuvait jamais en Australie ? Bienvenue au Dorrigo Rainforest National Park. Ces "rainforest" ou "forêts tropicales" sont très présentes sur la côte est Australienne et en Nouvelle-Zélande.</p>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-nz">On vous avait prévenus, il y a des pièges ! Bienvenue au Dorrigo Rainforest National Park. Ces "rainforest" ou "forêts tropicales" sont très présentes sur la côte est Australienne et en Nouvelle-Zélande.</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">La plage (bis)</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/TeHanga-Goldie-Bushwalk.10cc2916.jpg" alt="La plage (bis)">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q4" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q4" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-aus">Pouin pouin pouin, cette eau turquoise a été vue depuis la Nouvelle-Zélande, lors de la marche côtière "Te Henga".</p>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-nz">Bien vu ! L'eau peut aussi être turquoise et paradisiaque en Nouvelle-Zélande, surtout sous ce beau soleil le long du littoral "Te Henga".</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">La forêt &amp; l'aventurier</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/GrandCanyon-BlueMountains.eda82d4d.jpeg" alt="La forêt &amp; l'aventurier">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q5" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q5" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-aus">Encore l'Australie ? C'est l'jeu ma pauvre Lucette... N'est-il pas beau notre aventurier au coeur de la rainforest du parc national des Blues Mountains ?</p>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-nz">Perdu ! L'intrepide Paulin se trouve au coeur de la rainforest du parc national des Blues Mountains en Australie.</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">L'animal</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/platypus-eungellanationalpark.aa9bca05.jpg" alt="L'animal">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q6" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q6" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-aus">Des connaisseurs de l'ornithorynque (ou platypus en anglais) ? Bravo en tout cas, celui-là barbotait dans une rivière du Parc National Eunguella et on n'en trouve que dans ce pays.</p>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-nz">Perdu ! Dites "Bonjour" à l'ornithorynque (ou platypus en anglais) qui barbotait dans une rivière du Parc National Eunguella en Australie. On n'en trouve que dans ce pays !</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">La forêt (bis)</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/vegetation-whangareifalls.5d1f56da.jpg" alt="La forêt (bis)">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q7" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q7" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-aus">Pas facile hein ? Cette rainforest se trouve en Nouvelle-Zélande, du côté de chutes Whangarei.</p>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-nz">Bien vu :) Cette rainforest se trouve du côté de chutes Whangarei.</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">Le sommet</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/Pinnacles.c1bf5b84.jpg" alt="Le sommet">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q8" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q8" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-aus">Ben  alors ? Vous n'avez pas reconnu les "Pinnacles" (pics) dans la région de Corromandel en Nouvelle-Zélande ?</p>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-nz">Yeahhh ! Vous avez bien reconnu les "Pinnacles" (pics) dans la région de Corromandel. Bravo !</p>
+      </div>
+    </div>
+
+    <div class="AusNzQuiz_question">
+      <h2 class="AusNzQuiz_question_title">Le fail</h2>
+      <img class="AusNzQuiz_question_image" src="/static/media/GrandCanyon-Lookout-Bleumountains.f0e4628a.jpg" alt="Le fail">
+      <div class="AusNzQuiz_question_choices">
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q9" class="quiz-aus"> Australie</label>
+        <label class="AusNzQuiz_question_choices_choice"><input type="radio" name="q9" class="quiz-nz"> Nouvelle-Zélande</label>
+        <p class="AusNzQuiz_question_answer -correct quiz-answer-aus">Une chance sur deux et... c'est gagné ! Nous sommes au sommet du Grand Canyon, dans le parc de Blues Mountains atteint après 2 heures de marche. Nous étions censés découvrir une vue superbe sur le canyon...</p>
+        <p class="AusNzQuiz_question_answer -incorrect quiz-answer-nz">Ok c'était impossible. Nous sommes au sommet du Grand Canyon, dans le parc de Blues Mountains en Australie atteint après 2 heures de marche. Nous étions censés découvrir une vue superbe sur le canyon...</p>
+      </div>
+    </div>
+
+  </div>
+  <hr class="AusNzQuizPage_separator">
+  <p class="AusNzQuizPage_thanks">Merci d'avoir parcitipé à notre quiz !</p>
+  <p class="AusNzQuizPage_footer">Réalisé à l'arrière d'un van lancé à pleine vitesse sur les routes de l'Australie. Nausée garantie&nbsp;!!<img class="AusNzQuizPage_footer_van" src="/static/media/van.c5a8b8f5.jpg" alt="Ca bosse dur dans le van"></p>
+</div>
+
+</div>
+<footer class="Layout_footer">
+<a class="ShinyLink" href="/desinscription">Désinscription</a> - <a class="ShinyLink" href="/politique-confidentialite">Confidentialité</a> - <a class="ShinyLink" href="mailto:yesreply@margotbrun.com">Nous contacter</a>
+</footer>
+</div>
+</body>
+</html>
